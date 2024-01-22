@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let beratMadan = 60;
+        let tinggiMadan = 1.6;
+
+        let beratJoan = 64;
+        let tinggiJoan = 1.65;
+
+        const imtMadan = beratMadan / tinggiMadan ** 2;
+        const imtJoan = beratJoan / tinggiJoan ** 2;
+
+        const madanHigherIMT = imtMadan > imtJoan;
+
+        console.log("IMT Madan: " + imtMadan.toFixed(2));
+        console.log("IMT Joan: " + imtJoan.toFixed(2));
+
+        if (imtMadan >= imtJoan) {
+            console.log(`Nilai IMT Madan (${imtMadan.toFixed(2)}) Lebih Tinggi Dari Nilai IMT Joan ${imtJoan.toFixed(2)}`)
+        }
+        else {
+            console.log(`Nilai IMT Joan (${imtJoan}) Lebih Tinggi Dari Nilai IMT Madan (${imtMadan.toFixed(2)})`)
+        }
+
+    </script>
+</body>
+
+</html>
